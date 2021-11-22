@@ -7,7 +7,7 @@ OpenCV is an open source library for functions aimed at classical computer visio
 Classical Computer vision techniques rely on the intensity of pixels in the image, and use a number of predefined algorithms to extract information from images. 
 
 ## Installation and Downloading OpenCV
-From the command prompt you can easily download OpenCV with pip using the command:
+From the bash terminal you can easily download OpenCV with pip using the command:
 
 `python -m pip opencv-python `
 
@@ -44,7 +44,7 @@ Imread has two important options, colour images and greyscale images. To specify
 imshow will only display an image for as long as the compiler takes to run the line so we need:
 
 ### waitKey
-`cv2.waitKey(0)` - the waitKey function pauses the compiler for as long as you specify (0 means an infinite amount of time, until a key is pressed on the keyboard). For example, `cv2.waitKey(5)` will wait on that line for 5 seconds before continuing to the rest of the code.
+`cv2.waitKey(0)` - the waitKey function pauses the compiler for as long as you specify (0 means an infinite amount of time, until a key is pressed on the keyboard). For example, `cv2.waitKey(5)` will wait on that line for 5 milliseconds before continuing to the rest of the code.
 
 ### destroyAllWindows
 `cv2.destroyAllWindows()` will destory all the pop up windows from the code. This is useful to have at the end of your code, so that all windows are properly closed at the end of the script.
@@ -67,15 +67,6 @@ Images are stored in numpy arrays. Numpy is an array library in python - there a
 
 **Remember** that for all operations, rows are accessed first and then columns (y and THEN x).
 
-### Some Useful Numpy Functions:
-### shape
-`img.shape` - which outputs a tuple (python list - object with multiple values), the rows, columns and channels (height, width, depth of the matrix) of the image. When the image is greyscale there is only one channel, so the image shape will only contain two values. 
-### size
-`img.size` - outputs the total number of pixels in the image (rows*columns)
-### dtype
-`img.dtype` - the dtype property is the image’s data type. It's often important to know this property, as a large 
-number of errors in OpenCV can result from incorrect use of the data types. 
-
 ## Image Storage
 Each pixel intensity is stored in a single numpy array cell, and has an intensity value of 0-255. Intensity values must be integers and cannot be negative. 0 is always black, or 'off', and 255 is always 'on'.
 
@@ -92,7 +83,20 @@ Each pixel has three values for the three channel mats, blue, green and red (thi
 **Note**: Black and white images are made up of greyscale pixels ranging from white (value 255) to black (value 0).
 
 Below is a visualization of a colour image's pixels:
+
 ![Image Pixels](./imgs/image_pixels.png)
+
+### Some Useful Numpy Functions:
+### shape
+`img.shape` - which outputs a tuple (python list - object with multiple values), the rows, columns and channels (height, width, depth of the matrix) of the image. When the image is greyscale there is only one channel, so the image shape will only contain two values. 
+### size
+`img.size` - outputs the total number of pixels in the image (rows*columns)
+### dtype
+`img.dtype` - the dtype property is the image’s data type. It's often important to know this property, as a large 
+number of errors in OpenCV can result from incorrect use of the data types. 
+
+### copy
+`img.copy()` - to copy an image, simply put copy() after it, and it will produce a copy of the array. The output of this function is another image, so you can set another variable name for this image copy. 
 
 ## Image Manipulation
 All image manipulation is simply just matrix manipulation that we can see in a visual form. 
