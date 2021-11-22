@@ -101,9 +101,13 @@ All image manipulation is simply just matrix manipulation that we can see in a v
 Just like accessing a numpy array, image pixel access looks like `img[pixel_row][pixel_column]`, which would access the intensity values for the pixel at row,column. 
 
 ## Code Examples
-Code Example #1:  <a href='GIT HUB LINK'>Making a Picture Border</a>
+Code Example #1:  <a href='https://github.com/queens-autodrive/opencv-tutorial/blob/main/2.%20make_picture_border.py'>Making a Picture Border</a>
 
-Code Example #2:  <a href='GIT HUB LINK'>Copy Region of Interest and Paste on Image</a>
+Code Example #2:  <a href='https://github.com/queens-autodrive/opencv-tutorial/blob/main/3.%20copy_paste_im.py'>Copy Region of Interest and Paste on Image</a>
+
+Code Example #3: <a href='https://github.com/queens-autodrive/opencv-tutorial/blob/main/4.%20webcam_open.py'>Open Your Webcam</a>
+    (Example: <a href='https://github.com/queens-autodrive/opencv-tutorial/raw/main/webcam_open%20demo.MOV'>Open Your Webcam Ex.</a>)
+
 
 ## Other Useful Tutorials:
 - Tech with Tim:  <a href='https://www.youtube.com/watch?v=qCR2Weh64h4&list=PLzMcBGfZo4-lUA8uGjeXhBUUzPYc6vZRn'>OpenCV Python Tutorials Playlist</a>
