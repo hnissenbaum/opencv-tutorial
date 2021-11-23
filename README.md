@@ -1,6 +1,9 @@
 # OpenCV Tutorial
 This is the code for the OpenCV Tutorial that was run internally for the Queen's AutoDrive Team
 
+## Tutorial
+<a href='https://youtu.be/r5ft1LTczig'>Here</a> is the link to the recording of the tutorial held on November 22nd. All source code and documentation referenced is in this repository. 
+
 ## What is OpenCV?
 OpenCV is an open source library for functions aimed at classical computer vision. Most real time computer vision processing that uses classical techniques will revolve around OpenCV functions, so it's important to be comfortable with it for our purposes. 
 
